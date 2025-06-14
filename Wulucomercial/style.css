@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+h1{
+    text-align: center;
+    border-style: outset;
+    border-radius: 1cm;
+    border-color: rgb(0, 153, 255);
+
+    position: static;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: aliceblue;
+}
+p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: longer;
+}
+p:selection{
+color: aliceblue;
+background-color: rgba(64, 64, 235, 0.541);
+}
+input{
+    border-radius: 1cm;
+    border-color: rgb(0, 89, 255);
+    font-size: larger;
+    width: 290px;
+    height: 30px;
+
+}
+
+body{
+    scroll-behavior: smooth;
+    background-size: 400%;
+    background-attachment: fixed;
+    background-image: url(./pictures/background.png);
+    background-color: #001d62;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    color: rgb(240, 248, 255);
+}
+ol{
+    color: aliceblue;
+}
+h1{
+    color: antiquewhite;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+
+
+img{
+    position: relative;
+}
+footer{
+    text-align: center;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    margin: 0;
+}
+
+hr{
+    color: rgb(255, 255, 255);
+}
+abbr {
+    text-decoration: none;
+}
+.icone{
+    cursor: pointer;
+}
+
+.navbar { 
+    background-color: #001d62;
+    padding: 10px 20px;
+    position: relative;
+ }
+
+.logo {
+    color: white;
+    font-size: 1.3em;
+    line-height: 40px;
+    font-weight: 40px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border-radius: 4px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.menuicon{
+    display: none;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+#menumostra{
+    display: none;
+}
+@media (max-width: 760px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        top: 50px;
+        right: 0;
+    }
+    #menumostra:checked + .menuicon + .menu{
+        display: flex;
+    }
+    .menuicon {
+        display: block;
+    }
+
+
+}

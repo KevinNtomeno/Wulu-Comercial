@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar{
+            background-color: #001d62;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .logo{
+            color: white;
+            font-size: 1.3em;
+            line-height: 40px;
+            font-weight: 40px;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            gap:  20px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            border-radius: 4px;
+            
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .menuicon {
+            display: none;
+            font-size: 1.2em;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        #menumostra {
+            display: none;
+        }
+@media (max-width: 760px) {
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        top: 50px;
+        right: 0;
+    }
+
+    #menumostra:checked + .menuicon + .menu {
+        display: flex;
+    }
+    .menuicon{
+        display: block;
+    }
+
+}
+    </style>
+    <title>Wulu Comercial </title>
+</head>
+<link rel="shortcut icon" href="./pictures/icons/letra-w.ico" type="image/x-icon">
+<body>
+    <nav class="navbar">
+    <div class="logo">Wulu Comercial</div>
+    <input type="checkbox" id="menumostra">
+    <label for="menumostra" class="menuicon"><img src="pictures/icons/letra-w.ico" alt="Menu"></label>
+
+
+    <ul class="menu">
+        <li><a href="Nossos Projectos.html">Nossos Projectos</a></li>
+        <li><a href="Quem nos somos.html">Quem nós somos</a></li>
+        <li><a href="Real Objectivo.html">Nosso Real Objectivo</a></li>
+        <li><a href="Oque Achou.html">Envie - nos um feedback</a></li>
+
+    </ul>
+</nav>   
+<br>
+    <div class="email">
+<h2>A Soluçao dos seus problemas encontram - se aqui <br>Contactos: +244 949 279 092 <br>
+    E - mail:    <abbr title="Enviar um comentário"><a href="mailto:wulucomercial@gmail.com?subject=Oi, gostaria de saber mais&body=Ndombele Kevin">wulucomercial@gmail.com</a></abbr></h2>
+    </div>
+
+
+ 
+
+    <footer>
+&copy;Site por Ndombele Wulu - 2025
+    </footer>
+    <br><br><br><br><br><br>
+    <hr>
+    <h2 style="text-align: justify;">Nossas Versões Anteriores</h2>
+    <video src="videos/wulucomercial.mp4" poster="pictures/wulucomercial-poster.png" autoplay loop width="500">Wulu Comercial</video>
+    <br><br><br>
+
+    
+
+</body>
+</html>
